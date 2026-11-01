@@ -26,7 +26,7 @@ El proyecto integra un pipeline desacoplado compuesto por:
 
 ### Paso 1: Clonar el repositorio
 ```bash
-git clone <URL_DE_TU_REPOSITORIO>
+git clone https://github.com/Sam-Alvz/proyecto_riesgo_credito.git
 cd proyecto_riesgo_credito
 ```
 ### Paso 2: Construir la imagen del contenedor
@@ -49,15 +49,17 @@ Verificación de Salud de la API: http://localhost:8000/
 ## 5. Ejecución Local sin Docker (Alternativa)
 Si deseas probar el entorno sin contenedor:
 
-Instalar dependencias:
-
-Bash
+1. **Instalar dependencias:**
+```bash
 pip install -r requirements.txt
-Iniciar la API (terminal 1):
+```
 
-Bash
+2. **Iniciar la API (terminal 1):**
+```bash
 uvicorn app.main:app --reload --port 8000
-Iniciar Streamlit (terminal 2):
+```
 
-Bash
+3. **Iniciar Streamlit (terminal 2):**
+```bash
 streamlit run app/frontend.py
+```
