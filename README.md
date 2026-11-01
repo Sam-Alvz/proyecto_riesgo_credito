@@ -28,13 +28,15 @@ El proyecto integra un pipeline desacoplado compuesto por:
 ```bash
 git clone <URL_DE_TU_REPOSITORIO>
 cd proyecto_riesgo_credito
-Paso 2: Construir la imagen del contenedor
-Bash
+```
+### Paso 2: Construir la imagen del contenedor
+```bash
 docker build -t evaluador-credito-ia:v1 .
-Paso 3: Ejecutar el contenedor
-Bash
+```
+### Paso 3: Ejecutar el contenedor
+```bash
 docker run -d -p 8000:8000 -p 8501:8501 --name contenedor_credito evaluador-credito-ia:v1
-
+```
 ---
 ## 4. Acceso a los Servicios
 Interfaz Gráfica (Streamlit): http://localhost:8501
