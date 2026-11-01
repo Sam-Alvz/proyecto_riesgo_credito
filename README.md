@@ -63,3 +63,6 @@ uvicorn app.main:app --reload --port 8000
 ```bash
 streamlit run app/frontend.py
 ```
+## 6. Documentación Adicional
+
+- Consulta el [Manual de Despliegue en la Nube](docs/despliegue_nube.md) para conocer los requerimientos de infraestructura, estrategia PaaS y el procedimiento de publicación en servidores cloud.
